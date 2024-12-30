@@ -71,6 +71,7 @@ config DRM_XLNX_DPTX
 config DRM_XLNX_DSI
 	tristate "Xilinx DRM DSI Subsystem Driver"
 	depends on DRM_XLNX
+	depends on 64BIT
 	select DRM_MIPI_DSI
 	select DRM_PANEL
 	select BACKLIGHT_LCD_SUPPORT
